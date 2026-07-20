@@ -1,0 +1,20 @@
+h2{
+    color: brown;
+    text-align: center;
+    background-color: beige;
+}
+
+button{
+    background-color: orange;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 2px 4px black;
+
+}
+
+button:hover{
+    transform: scale(1.03);
+    background-color: orangered;
+    transition: 2s;
+}
