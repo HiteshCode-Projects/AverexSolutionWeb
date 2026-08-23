@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp">Hello Everyone Good Morning</p>
+
+    <div class="box">This is Div 0</div>
+    <div class="box">This is Div 1</div>
+
+    <p>This is Second Paragaph</p>
+
+    <script>
+        //1.Select Element(Tag)  
+
+        //document.methodName    Document--->Webpage
+
+        //Id
+        const paragraph =  document.getElementById("myp")
+
+        console.log(paragraph)
+
+        console.log(paragraph.textContent)
+
+        //2.className
+        const box =    document.getElementsByClassName("box")
+        console.log(box)
+        console.log(box[1])
+        console.log(box[1].textContent)
+
+
+        //3.TagName
+        const xyz =  document.getElementsByTagName("p")
+        console.log(xyz)
+
+        console.log(xyz[1])
+        console.log(xyz[1].textContent)
+
+
+    </script>
+</body>
+</html>

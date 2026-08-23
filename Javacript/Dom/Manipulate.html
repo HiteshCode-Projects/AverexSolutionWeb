@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="myh">Good Morning</h2>
+
+    <div id="mydiv">
+        Hello Div
+    </div>
+
+    <p id="dull">This is Dull Paragaph</p>
+
+    <script>
+        //1. Update text Content
+    const heading =  document.getElementById("myh")
+
+    heading.textContent = "Good AfterNoon"
+
+       //2. Update Tag
+    const divTag =  document.getElementById("mydiv")
+
+    // divTag.innerHTML = "<button>Login</button>"
+
+    divTag.innerHTML = `
+    <h2>This is Updated Heading</h2>
+    <button>Login</button>
+    <p>This is Paragarph</p>
+    <input placeholder="Enter Your Name">
+    `
+
+    const paragph = document.getElementById("dull")
+    paragph.style.color = "red"
+    paragph.style.backgroundColor = "black"
+    paragph.style.textAlign = "center"
+    paragph.textContent = "This is New Paragaph"
+    </script>
+</body>
+</html>
