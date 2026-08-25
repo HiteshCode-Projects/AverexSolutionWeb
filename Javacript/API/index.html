@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // fetch('API ADDRESS')
+        //Rule - Data Needs to be converted into JSON format
+
+        fetch('https://randomuser.me/api/')
+
+          //successfull
+        .then(response => response.json())
+
+        .then(data => console.log(data))
+
+
+        //unsucessfull
+        .catch(error => console.log('Error Fetching ' , error))
+
+
+    </script>
+</body>
+</html>
